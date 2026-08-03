@@ -16,7 +16,7 @@ let useEmail;
 
 const id = Symbol('123')
 const anotherid = Symbol('123')
-console.log(id === anotherid)
+// console.log(id === anotherid)
 
 const bignumber = 23456782334546454646n
 
@@ -36,7 +36,7 @@ const myFunction = function () {
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 // typeof
 // Undefined	                          "undefined"
@@ -49,3 +49,45 @@ console.log(typeof anotherId);
 // Object (native or host and does implement [[Call]])	"function"
 // Object (host and does not implement [[Call]])	Implementation-defined except may not be "undefined", "boolean", "number", or "string".
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// stack memory(Primative)   ,Heap memory(Non-primative)
+// Stack memory stores primitive data types.
+// Primitive data types include:
+// Number
+// String
+// Boolean
+// Null
+// Undefined
+// Symbol
+// BigInt
+// When a primitive value is assigned to another variable, a copy of the value is created.
+// Therefore, changing one variable does not affect the other.
+let myyoutubename = "yuta@gmail.com"
+let anothername = myyoutubename
+anothername = "Atharva"
+
+console.log(anothername)
+console.log(myyoutubename)
+
+
+// Heap Memory (Non-Primitive Data Types)
+// Heap memory stores non-primitive (reference) data types.
+// Non-primitive data types include:
+// Object
+// Array
+// Function
+// Variables store the reference (memory address) of the object, not the object itself.
+// When one variable is assigned to another, both variables point to the same object.
+// Therefore, changing the object through one variable affects the other.
+let userone = {
+    email: "user@gmail.com",
+    upi: "user@boi"
+}
+
+let usertwo = userone
+
+usertwo.email = "yuta@gmail.com"
+console.log(userone.email)
+console.log(usertwo.email)

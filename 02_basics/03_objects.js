@@ -1,4 +1,10 @@
 // singleton
+// | Object Literal                  | Singleton                               |
+// | ------------------------------- | --------------------------------------- |
+// | Created using `{}`              | Designed to have only one instance      |
+// | Multiple objects can be created | Same instance is reused                 |
+// | Simple and commonly used        | Used when one shared instance is needed |
+// | Example: `{ name: "Atharva" }`  | Example: `Singleton.getInstance()`      |
 
 // object literals
 const mysym = Symbol("key1")

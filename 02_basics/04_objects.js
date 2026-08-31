@@ -38,11 +38,26 @@ const obj3 = { ...obj1, ...obj2 }
 
 // object de-structure
 const course = {
-    coursename: "js hindi",
-    courseprice: "999",
-    courseteacher: "Atharva"
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
 }
 
-const { courseteacher } = course
+// course.courseInstructor
 
-console.log(courseteacher)
+const { courseInstructor: instructor } = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]

@@ -6,15 +6,15 @@
 // console.log("V")
 // console.log("A")
 
-function saymyname() {
-    console.log("A")
-    console.log("T")
-    console.log("H")
-    console.log("A")
-    console.log("R")
-    console.log("V")
-    console.log("A")
-}
+// function saymyname() {
+//     console.log("A")
+//     console.log("T")
+//     console.log("H")
+//     console.log("A")
+//     console.log("R")
+//     console.log("V")
+//     console.log("A")
+// }
 
 // saymyname()
 
@@ -35,7 +35,7 @@ const result = addtwonum(2, 3)
 
 function loginuserMessage(username = "sam") {
     if (username === undefined) {
-        console.log("please enter a username");
+        // console.log("please enter a username");
         return
     }
     return `${username} just logged in`
@@ -43,4 +43,33 @@ function loginuserMessage(username = "sam") {
 
 
 // console.log(loginuserMessage("Atharava"))
-console.log(loginuserMessage())
+// console.log(loginuserMessage())
+
+function Calculatecartprice(...num1) {
+    return num1
+}
+// console.log(Calculatecartprice(2, 3, 12))
+
+const user = {
+    username: "Atharva",
+    price: 122
+}
+function handleobj(anyobj) {
+    // console.log(`username is ${anyobj.username} and price is ${anyobj.price}`)
+}
+
+// handleobj(user)
+handleobj({
+    username: "sam",
+    price: 299
+})
+
+
+const mynewArray = [100, 200, 300, 400]
+
+function Returnsecondvalue(getArray) {
+    return getArray[2]
+}
+// console.log(Returnsecondvalue(mynewArray))
+
+console.log(Returnsecondvalue([100, 200, 300, 400]))
